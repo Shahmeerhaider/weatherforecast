@@ -1,0 +1,115 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #66d8ea 0%, #4e4ba2 100%);
+    min-height: 90vh;
+    transition: background 0.3s ease;
+}
+
+body.dark-mode {
+    background: #064973;
+}
+
+body.dark-mode .card {
+    background: #1f6d9d;
+    color: #eee;
+    border-color: #0f3460;
+}
+
+body.dark-mode .list-group-item {
+    background: #16213e;
+    color: #eee;
+    border-color: #0f3460;
+}
+
+body.dark-mode .list-group-item:hover {
+    background: #1a1a2e;
+}
+
+body.dark-mode .form-control {
+    background: #0f3460;
+    border-color: #e94560;
+    color: white;
+}
+
+body.dark-mode .form-control:focus {
+    background: #0f3460;
+    color: white;
+}
+
+body.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+body.weather-sunny {
+    background: linear-gradient(135deg, #f5af19 0%, #f12711 100%);
+}
+
+body.weather-rainy {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+body.weather-cloudy {
+    background: linear-gradient(135deg, #757f9a 0%, #d7dde8 100%);
+}
+
+body.dark-mode.weather-sunny {
+    background: linear-gradient(135deg, #b76e1e 0%, #8b3a1a 100%);
+}
+
+body.dark-mode.weather-rainy {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c5282 100%);
+}
+
+body.dark-mode.weather-cloudy {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.weather-icon {
+    font-size: 4rem;
+}
+
+.temp-display {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.search-history-item {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-history-item:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    transform: translateX(5px);
+}
+
+.invalid-input {
+    border: 2px solid #dc3545 !important;
+}
+
+.valid-input {
+    border: 2px solid #198754 !important;
+}
+
+@media (max-width: 768px) {
+    .temp-display {
+        font-size: 2rem;
+    }
+    
+    .weather-icon {
+        font-size: 2.5rem;
+    }
+}
